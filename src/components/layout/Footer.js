@@ -11,13 +11,10 @@ const Footer = () => (
         <h2 className="text-lg font-semibold">Social Media</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
+            <a href="https://www.linkedin.com/company/janusql">Linkedin</a>
           </li>
           <li>
-            <a href="https://twitter.com/HuntaroSan">Linkedin</a>
-          </li>
-          <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
+            <a href="https://github.com/oslabs-beta/janusql">GitHub</a>
           </li>
         </ul>
       </div>
