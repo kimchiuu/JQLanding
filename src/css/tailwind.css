@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-primary;
+  @apply text-primary-orangelighter;
 }
 a:hover {
   @apply text-primary-darker;

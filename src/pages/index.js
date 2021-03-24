@@ -9,6 +9,10 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import Pmetrics from '../gif/Pmetrics'
+import ProfPics from '../images/ProfPics';
+import GitHub from '../images/GitHub.png';
+import LinkedIn from '../images/LinkedIn.png';
+import JanusQL from '../images/JanusQL.png';
 
 export default () => (
   <Layout>
@@ -22,11 +26,12 @@ export default () => (
           A tool for GraphQL API security and performance testing
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Download</Button>
+            <Button size="lg">Github</Button>
           </p>
         </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
+        <div className="lg:w-1/1.5">
+          <img src={JanusQL} alt="JanusQL" width="1000" height="1000"></img>
+          {/* <HeroImage /> */}
         </div>
       </div>
     </section>
@@ -103,35 +108,79 @@ export default () => (
       }
       secondarySlot={<Pmetrics />}
     />
+
+    <section id="about" className="py-20 lg:pt-32">
+      <div className="container mx-auto text-center bg-primary-aboutbox">
+        <Card className="mb-8">
+        <h2 className="text-gray-700 text-3xl lg:text-4xl font-semibold">About</h2>
+          <p className="text-gray-700 mt-8 text-xl font-light">
+          JanusQL is an easy-to-use Electron powered GUI for GraphQL API security and performance testing. It allows users to test the performance of their GraphQL API by displaying a query's response time, throughput, andd loadcapacity. It can also test if their GraphQL API is protected against DDOS attacks. Users can keep track of all analytics ran while exploring the API by sending it different kinds of data to see what values are returned. <br></br><br></br>
+
+          Users can keep track of all analytics ran while exploring the API by sending it different kinds of data to see what values are returned. <br></br><br></br>
+
+          Currently in Beta.
+          </p>
+        </Card>
+      </div>
+    </section>
+
     <section id="stats" className="py-20 lg:pt-32">
       <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">Our Team</LabelText>
+        <LabelText className="text-primary-darker text-3xl lg:text-5xl font-semibold">Our Team</LabelText>
         <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="Phillip" secondaryText="Bannister" />
+            <ProfPics.Adrian />
+            <StatsBox primaryText="Adrian Inza-Cruz" />
+            <img src={GitHub} alt="GitHub logo" width="25" height="25"></img> 
+            <a href="https://github.com/ainzacruz" className="text-primary-biolinks">Github</a> <br></br>
+            <img src={LinkedIn} alt="Linkedin logo" width="25" height="25"></img>
+            <a href="https://www.linkedin.com/in/adrian-inza-cruz/" className="text-primary-biolinks">LinkedIn</a>
           </div>
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="Lucas" secondaryText="Mobley" />
+            <ProfPics.Kim />
+            <StatsBox primaryText="Kim Chiu" />
+            <img src={GitHub} alt="GitHub logo" width="25" height="25"></img> 
+            <a href="https://github.com/kimchiuu" className="text-primary-biolinks">Github</a> <br></br>
+            <img src={LinkedIn} alt="Linkedin logo" width="25" height="25"></img>
+            <a href="https://www.linkedin.com/in/kimchiuu/" className="text-primary-biolinks">LinkedIn</a>
           </div>
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="Kim" secondaryText="Chiu" />
+            <ProfPics.Lucas />
+            <StatsBox primaryText="Lucas Mobley" />
+            <img src={GitHub} alt="GitHub logo" width="25" height="25"></img> 
+            <a href="https://github.com/lucasmobley" className="text-primary-biolinks">Github</a> <br></br>
+            <img src={LinkedIn} alt="Linkedin logo" width="25" height="25"></img>
+            <a href="https://www.linkedin.com/in/lucasmobley/" className="text-primary-biolinks">LinkedIn</a>
           </div>
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="Tammy" secondaryText="Le" />
+            <ProfPics.Phillip />
+            <StatsBox primaryText="Phillip Bannister" />
+            <img src={GitHub} alt="GitHub logo" width="25" height="25"></img> 
+            <a href="https://github.com/phillipkb" className="text-primary-biolinks">Github</a> <br></br>
+            <img src={LinkedIn} alt="Linkedin logo" width="25" height="25"></img> 
+            <a href="https://www.linkedin.com/in/phillipkekoabannister/" className="text-primary-biolinks">LinkedIn</a>
           </div>
           <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="Adrian" secondaryText="Inza-Cruz" />
+            <ProfPics.Tammy />
+            <StatsBox primaryText="Tammy Le" />
+            <img src={GitHub} alt="GitHub logo" width="25" height="25"></img> 
+            <a href="https://github.com/letammy979" className="text-primary-biolinks">Github</a> <br></br>
+            <img src={LinkedIn} alt="Linkedin logo" width="25" height="25"></img>
+            <a href="https://www.linkedin.com/in/letammy/" className="text-primary-biolinks">LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+    <section className="container mx-auto my-20 py-24 bg-pink-100 rounded-lg text-center">
       <h3 className="text-5xl font-semibold">Try JanusQL Today</h3>
       <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
+        To get started, fork and clone the app from our github.<br></br>
+        
+        <br></br>
+        Now, let's generate some tests!
       </p>
       <p className="mt-8">
-        <Button size="xl">Download</Button>
+        <Button size="xl">Github</Button>
       </p>
     </section>
   </Layout>
